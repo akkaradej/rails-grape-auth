@@ -1,0 +1,15 @@
+staging:
+ domain: staging.example.com
+ user: deployer
+ deploy_to: /var/www/app
+ repository: git@github.com:example/project.git
+ branch: develop
+ rails_env: staging
+
+production:
+ domain: production.example.com
+ user: deployer
+ deploy_to: /var/www/app
+ repository: git@github.com:example/project.git
+ branch: master
+ rails_env: production
